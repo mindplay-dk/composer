@@ -1,0 +1,24 @@
+{
+	"test/a": {
+		"type": "package",
+		"package": {
+			"name": "test/a",
+			"version": "1.0.0",
+			"dist": {
+				"url": "http://test/a.zip",
+				"type": "zip"
+			}
+		}
+	},
+	"test/b": {
+		"type": "package",
+		"package": {
+			"name": "test/b",
+			"version": "2.0.0",
+			"dist": {
+				"url": "http://test/b.zip",
+				"type": "zip"
+			}
+		}
+	}
+}

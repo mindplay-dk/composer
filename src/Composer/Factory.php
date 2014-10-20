@@ -321,6 +321,7 @@ class Factory
         $rm->setRepositoryClass('perforce', 'Composer\Repository\VcsRepository');
         $rm->setRepositoryClass('hg', 'Composer\Repository\VcsRepository');
         $rm->setRepositoryClass('artifact', 'Composer\Repository\ArtifactRepository');
+        $rm->setRepositoryClass('map', 'Composer\Repository\MapRepository');
 
         return $rm;
     }

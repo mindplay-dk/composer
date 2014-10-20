@@ -101,7 +101,13 @@ class RepositoryManager
 
         $class = $this->repositoryClasses[$type];
 
-        return new $class($config, $this->io, $this->config, $this->eventDispatcher);
+        $repo = new $class($config, $this->io, $this->config, $this->eventDispatcher);
+
+        if ($repo instanceof ManagerAware) {
+            $repo->setRepositoryManager($this);
+        }
+
+        return $repo;
     }
 
     /**
